@@ -90,6 +90,6 @@ public class Datatyper {
         System.out.println(avrundetTall);
 
         int rest = 11 % 3; // Modulus - gir oss resten etter at man har delt på nærmeste mulige heltall
-        System.out.println(rest); 
+        System.out.println(rest);
     }
 }
