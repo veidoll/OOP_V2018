@@ -84,5 +84,12 @@ public class Datatyper {
         System.out.println("a / b: " + c);
         int d = a % b; // Modulus gir oss "resten" (remainder)
         System.out.println("a%b: " + d);
+
+        double desimalTall = 2.4;
+        int avrundetTall = (int) (desimalTall + 0.5); // Typecaster en double til int (desimaltall til heltall). Denne vil alltid runde NED
+        System.out.println(avrundetTall);
+
+        int rest = 11 % 3; // Modulus - gir oss resten etter at man har delt på nærmeste mulige heltall
+        System.out.println(rest); 
     }
 }
