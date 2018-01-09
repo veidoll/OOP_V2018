@@ -1,0 +1,8 @@
+
+public class Datatyper {
+
+    public static void main(String[] args) {
+        short alder = 93;
+    }
+
+}
