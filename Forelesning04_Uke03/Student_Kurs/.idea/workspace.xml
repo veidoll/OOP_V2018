@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ae2b94-7b98-4c78-9877-79f3c225409d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Kurs/Kurs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Kurs/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Kurs/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/.idea/description.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/.idea/project-template.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/Flyoversikt.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/src/no/hiof/larseknu/flyoversikt/Fly.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/src/no/hiof/larseknu/flyoversikt/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Flyoversikt/src/no/hiof/larseknu/flyoversikt/Transportfly.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/description.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/project-template.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Studentprosjekt.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Kurs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Student.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Objektreferanse/Main.java" afterPath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Objektreferanse/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Flyoversikt/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Flyoversikt/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Main.java" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Student.java" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Student.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="21" column="59" lean-forward="false" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+            <state relative-caret-position="539">
+              <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -50,14 +30,17 @@
       <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="452">
+              <caret line="58" column="65" lean-forward="false" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
+              <folding>
+                <element signature="e#1237#1238#0" expanded="true" />
+                <element signature="e#1310#1311#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Kurs.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Kurs.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Kurs.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -91,6 +74,7 @@
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekttest/Student.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekttest/Main.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Student.java" />
+        <option value="$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Main.java" />
       </list>
     </option>
   </component>
@@ -243,12 +227,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516096352052</updated>
       <workItem from="1516096355726" duration="1607000" />
-      <workItem from="1516098232813" duration="1445000" />
+      <workItem from="1516098232813" duration="1632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3052000" />
+    <option name="totallyTimeSpent" value="3239000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -270,7 +254,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30628803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30628803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -320,23 +304,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="21" column="59" lean-forward="false" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -344,6 +315,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="58" column="65" lean-forward="false" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
+          <folding>
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/studentprosjekt/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
           <folding />
         </state>
       </provider>

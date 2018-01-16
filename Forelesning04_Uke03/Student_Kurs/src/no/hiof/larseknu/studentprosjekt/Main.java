@@ -32,5 +32,9 @@ public class Main {
 			}
 		}
 
+
+		System.out.println("############");
+
+		System.out.println("Bruker Student sin toString():\n" + albertEinstein.toString());
     }
 }

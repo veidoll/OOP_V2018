@@ -53,4 +53,9 @@ public class Student {
     public void leggTilKurs(Kurs kurs) {
         this.kurs.add(kurs);
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " " + fornavn + " " + etternavn;
+    }
 }

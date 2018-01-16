@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caa32fe3-43be-4a75-a72d-dc95edab0e22" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Kurs/Kurs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Kurs/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Kurs/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/description.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/project-template.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flyoversikt.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/flyoversikt/Fly.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/flyoversikt/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/flyoversikt/Transportfly.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/.idea/description.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/.idea/project-template.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/Studentprosjekt.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/src/no/hiof/larseknu/studentprosjekt/Kurs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/src/no/hiof/larseknu/studentprosjekt/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Student_Kurs/src/no/hiof/larseknu/studentprosjekt/Student.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Objektreferanse/Main.java" afterPath="$PROJECT_DIR$/../../Forelesning03_Uke03/Student_Objektreferanse/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Student_Kurs/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Student_Kurs/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Student_Kurs/src/no/hiof/larseknu/studentprosjekt/Main.java" afterPath="$PROJECT_DIR$/../Student_Kurs/src/no/hiof/larseknu/studentprosjekt/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Student_Kurs/src/no/hiof/larseknu/studentprosjekt/Student.java" afterPath="$PROJECT_DIR$/../Student_Kurs/src/no/hiof/larseknu/studentprosjekt/Student.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +20,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/flyoversikt/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+            <state relative-caret-position="338">
+              <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -102,10 +82,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="54" />
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="27" />
-    <option name="width" value="1811" />
+    <option name="width" value="1920" />
     <option name="height" value="1112" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -223,16 +202,15 @@
       <workItem from="1516043378495" duration="1654000" />
       <workItem from="1516047157940" duration="3939000" />
       <workItem from="1516089925528" duration="3860000" />
-      <workItem from="1516098471553" duration="1537000" />
+      <workItem from="1516098471553" duration="1768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10990000" />
+    <option name="totallyTimeSpent" value="11221000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1112" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1920" height="1112" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -375,8 +353,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/flyoversikt/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        <state relative-caret-position="338">
+          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
           <folding />
         </state>
       </provider>
