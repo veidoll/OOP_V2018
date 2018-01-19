@@ -6,7 +6,7 @@ public class Student {
     private String fornavn;
     private String etternavn;
     private String studentId;
-    private Kurs kurs;
+    private ArrayList<Kurs> kurs = new ArrayList<>();
 
     public Student() {
     }
@@ -20,13 +20,6 @@ public class Student {
         this.fornavn = fornavn;
         this.etternavn = etternavn;
         this.studentId = studentId;
-    }
-
-    public Student(String fornavn, String etternavn, String studentId, Kurs kurs) {
-        this.fornavn = fornavn;
-        this.etternavn = etternavn;
-        this.studentId = studentId;
-        this.kurs = kurs;
     }
 
     public String getFornavn() {
@@ -53,11 +46,16 @@ public class Student {
         this.studentId = studentId;
     }
 
-    public Kurs getKurs() {
+    public ArrayList<Kurs> getKurs() {
         return kurs;
     }
 
-    public void setKurs(Kurs kurs) {
-        this.kurs = kurs;
+    public void leggTilKurs(Kurs kurs) {
+        this.kurs.add(kurs);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " " + fornavn + " " + etternavn;
     }
 }
