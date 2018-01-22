@@ -12,8 +12,8 @@ public class Transportfly extends Fly {
         this.maksLast = maksLast;
     }
 
-    public Transportfly(int seter, double maksLast) {
-        super(seter);
+    public Transportfly(String modell, int seter, double maksLast) {
+        super(modell, seter);
         this.maksLast = maksLast;
     }
 

@@ -1,6 +1,7 @@
 package no.hiof.larseknu.flyoversikt;
 
 public class Fly {
+    private String modell;
     private int passasjerer;
     private int seter;
 
@@ -9,7 +10,17 @@ public class Fly {
         passasjerer = 0;
     }
 
+    public Fly(String modell) {
+        this.modell = modell;
+    }
+
     public Fly(int seter) {
+        this.seter = seter;
+        passasjerer = 0;
+    }
+
+    public Fly(String modell, int seter) {
+        this.modell = modell;
         this.seter = seter;
         passasjerer = 0;
     }
