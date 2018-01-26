@@ -33,6 +33,10 @@ public class Fly {
         return seter;
     }
 
+    public String getModell() {
+        return modell;
+    }
+
     public void leggTilEnPassasjer() {
         if (harLedigeSeter())
             passasjerer++;
