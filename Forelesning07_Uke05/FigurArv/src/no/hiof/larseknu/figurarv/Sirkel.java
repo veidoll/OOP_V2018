@@ -20,6 +20,10 @@ public class Sirkel extends Figur{
         return 2 * Math.PI * radius;
     }
 
+    public double beregnDiameter() {
+        return 2 * radius;
+    }
+
     @Override
     public String toString() {
         return "Sirkel med radius " + radius;

@@ -19,9 +19,12 @@ public class Rektangel extends Figur{
         return (side1 + side2) * 2;
     }
 
+    public void setSide1(double side1) {
+        this.side1 = side1;
+    }
 
-    @Override
+    /*@Override
     public String toString() {
         return "Rektangel med sidene " + side1 + " " + side2;
-    }
+    }*/
 }

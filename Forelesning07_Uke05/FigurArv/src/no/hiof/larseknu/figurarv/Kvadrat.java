@@ -5,8 +5,11 @@ public class Kvadrat extends Rektangel {
 
     public Kvadrat(double side) {
         super(side, side);
+
+        this.side = side;
     }
 
+    @Override
     public String toString()
     {
         return "Kvadrat med side " + side;

@@ -1,31 +1,93 @@
 package no.hiof.larseknu.figurarv;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
-        Rektangel rektangel = new Rektangel(4,5);
+        Rektangel rektangelet = new Rektangel(4,5);
 
-        Kvadrat kvadrat = new Kvadrat(3);
+        Kvadrat kvadratet = new Kvadrat(3);
 
-        Sirkel sirkel = new Sirkel(3);
+        Sirkel sirkelen = new Sirkel(3);
 
-        Rektangel rektangel2 = new Kvadrat(4);
+        Rektangel rektangelet2 = new Kvadrat(4);
 
-        System.out.println(rektangel + "    Areal: " + rektangel.areal()+"   Omkrets: " + rektangel.omkrets());
-        System.out.println(kvadrat + "    Areal: " + kvadrat.areal() + "   Omkrets: " + kvadrat.omkrets() );
-        System.out.println(sirkel + "    Areal: " + sirkel.areal() + "   Omkrets: " + sirkel.omkrets() );
-        System.out.println(rektangel2 + "    Areal: " + rektangel2.areal() + "   Omkrets: " + rektangel2.omkrets());
+        System.out.println(rektangelet + "    Areal: " + rektangelet.areal()+"   Omkrets: " + rektangelet.omkrets());
+        System.out.println(kvadratet + "    Areal: " + kvadratet.areal() + "   Omkrets: " + kvadratet.omkrets() );
+        System.out.println(sirkelen + "    Areal: " + sirkelen.areal() + "   Omkrets: " + sirkelen.omkrets() );
+        System.out.println(rektangelet2 + "    Areal: " + rektangelet2.areal() + "   Omkrets: " + rektangelet2.omkrets());
 
-        System.out.println(rektangel);
-        System.out.println(kvadrat);
-        System.out.println(sirkel);
+        System.out.println(rektangelet);
+        System.out.println(kvadratet);
+        System.out.println(sirkelen);
 
-        if (erStorre(rektangel, kvadrat) == true) {
-            System.out.println(rektangel + " er størst");
+        Rektangel rektangel2 = new Rektangel(3, 5);
+        Kvadrat kvadrat2 = (Kvadrat)rektangel2;
+
+
+        if (erStorre(rektangelet, kvadratet)) {
+            System.out.println(rektangelet + " er størst");
         }
         else {
-            System.out.println(kvadrat + " er størst");
+            System.out.println(kvadratet + " er størst");
         }
+
+
+        ArrayList<Figur> figurArrayList = new ArrayList<>();
+
+        figurArrayList.add(rektangelet);
+        figurArrayList.add(kvadratet);
+        figurArrayList.add(sirkelen);
+        figurArrayList.add(rektangelet2);
+
+        for (Figur enFigur : figurArrayList) {
+            //System.out.println(enFigur.toString());
+        }
+
+        Figur[] figurArray = new Figur[4];
+
+        figurArray[0] = rektangelet;
+        figurArray[1] = kvadratet;
+        figurArray[2] = sirkelen;
+
+
+        int[] maaneder = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+
+        for (int maaned : maaneder)
+            System.out.println(maaned);
+
+        for (Figur enFigur : figurArray) {
+            System.out.println(enFigur);
+
+            if (enFigur instanceof Sirkel) {
+                Sirkel enSirkel = (Sirkel)enFigur;
+                System.out.println("Sirkelens diameter er: " + enSirkel.beregnDiameter());
+            }
+        }
+
+
+        /*// Går gjennom alle elementene i en liste og skriver ut areal
+        for (int i = 0; i < figurArray.length; i++) {
+            // Lager en ny referanse til objektet vi skal jobbe med
+            Figur enFigur = figurArray[i];
+            // Skriver ut arealet til figuren
+            System.out.println(enFigur.areal());
+        }
+
+        // Går gjennom alle elementene i en liste og skriver ut areal
+        for (Figur enFigur : figurArray) {
+            // Skriver ut arealet til figuren
+            System.out.println(enFigur.areal());
+        }*/
+
+
+        String meningenMedLivet = "42";
+        int bareEtTall = Integer.parseInt(meningenMedLivet);
+
+
+        double alder = 8.5;
+        int ordentligAlder = (int)alder;
     }
 
     private static boolean erStorre(Figur figur1, Figur figur2)
