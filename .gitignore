@@ -19,6 +19,4 @@
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-Forelesning07_Uke05/FigurArv/\.idea/
+hs_err_pid

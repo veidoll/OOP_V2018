@@ -10,8 +10,4 @@ public class Figur {
         return 0;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + " Jeg er en Figur. ";
-    }
 }

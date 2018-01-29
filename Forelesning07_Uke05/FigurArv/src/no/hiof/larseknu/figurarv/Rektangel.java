@@ -23,7 +23,7 @@ public class Rektangel extends Figur{
         this.side1 = side1;
     }
 
-    /*@Override
+    @Override
     public String toString() {
         return "Rektangel med sidene " + side1 + " " + side2;
     }
