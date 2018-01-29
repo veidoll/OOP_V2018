@@ -26,5 +26,7 @@ public class Rektangel extends Figur{
     /*@Override
     public String toString() {
         return "Rektangel med sidene " + side1 + " " + side2;
-    }*/
+    }
+
+
 }
