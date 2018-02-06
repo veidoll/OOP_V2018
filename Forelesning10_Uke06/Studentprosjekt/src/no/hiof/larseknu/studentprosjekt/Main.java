@@ -19,13 +19,15 @@ public class Main {
 
     	// Oppretter et par studentobjekter
 	    Student albertEinstein = new Student("Albert", "Einstein", "454545");
-        Student nikolaTesla = new Student("Nikola", "Tesla", "3");
+        Student nikolaTesla = new Student("Nikola", "Tesla", "3", 17);
 
         System.out.println(albertEinstein);
 
         Ansatt lek = new Ansatt("Lars Emil", "Knudsen", "1337", 90.0);
         Ansatt thn = new Ansatt("Tom Heine", "Nätt", "0001", 500.0);
 
+
+        System.out.println("Alle studenter tilhører " + Student.INSTITUSJON);
         // Henter ut den statiske listen over alle personer
         ArrayList<Person> allePersoner = Person.getAllePersoner();
 

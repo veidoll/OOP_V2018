@@ -4,19 +4,30 @@ import java.util.ArrayList;
 
 public class Student extends Person{
     private String studentId;
+    private int alder;
     private ArrayList<Kurs> kurs = new ArrayList<>();
+    private static final int MINIMUMSALDER = 18;
+    public static final String INSTITUSJON = "Høgskolen i Østfold";
 
     public Student() {
-        this("John", "Doe");
+        this("John", "Doe", 20);
     }
 
-    public Student(String fornavn, String etternavn) {
-        this(fornavn, etternavn, "000000");
+    public Student(String fornavn, String etternavn, int alder) {
+        this(fornavn, etternavn, "000000", alder);
     }
 
     public Student(String fornavn, String etternavn, String studentId) {
+        this(fornavn, etternavn, studentId, 20);
+    }
+
+    public Student(String fornavn, String etternavn, String studentId, int alder) {
         super(fornavn, etternavn);
         this.studentId = studentId;
+        this.alder = alder;
+
+        if (alder < MINIMUMSALDER)
+            System.out.println(fornavn + " " + etternavn + " er for ung til å begynne som student.");
     }
 
     public String getStudentId() {
