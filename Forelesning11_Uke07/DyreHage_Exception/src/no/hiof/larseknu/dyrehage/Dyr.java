@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public abstract class Dyr {
     private String navn;
-    private final int id;
+    private final int ID_NUMMER;
     private LocalDate fodselsdag;
     private static int dyreTeller;
 
@@ -14,12 +14,12 @@ public abstract class Dyr {
 
     public Dyr(String navn, LocalDate fodselsdag) {
         this.navn = navn;
-        this.id = dyreTeller++;
+        this.ID_NUMMER = dyreTeller++;
         this.fodselsdag = fodselsdag;
     }
 
     public int getId() {
-        return id;
+        return ID_NUMMER;
     }
 
     public String getNavn() {
