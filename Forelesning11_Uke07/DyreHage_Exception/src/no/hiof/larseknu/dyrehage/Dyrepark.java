@@ -1,5 +1,6 @@
 package no.hiof.larseknu.dyrehage;
 
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -41,21 +42,24 @@ public class Dyrepark {
 
             printSkriver = new PrintWriter(new FileWriter(filnavn));
 
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 4; i++) {
                 Dyr dyret = dyrIDyreparken.get(i);
 
                 if (dyret.getFodselsdag().getMonthValue() == maaned)
                     printSkriver.println(dyret.getNavn() + " har bursdag " + dyret.getFodselsdag().getDayOfMonth() + ". " + dyret.getFodselsdag().getMonth());
             }
-        } catch (IndexOutOfBoundsException e) {
-            System.err.println("Fanget IndexOutOfBoundsException: "
+        }
+        catch (IndexOutOfBoundsException | FileNotFoundException e) {
+            System.err.println("Fanget en exception: "
                     +  e.getMessage());
             e.printStackTrace(System.out);
-            throw new IndexOutOfBoundsException();
-        } catch (IOException e) {
+            //throw new IndexOutOfBoundsException();
+        }
+        catch (IOException e) {
             System.err.println("Fanget IOException: " +  e.getMessage());
             e.printStackTrace(System.out);
-        } finally {
+        }
+        finally {
             if (printSkriver != null) {
                 System.out.println("Lukker PrintWriter");
                 printSkriver.close();
@@ -64,21 +68,6 @@ public class Dyrepark {
                 System.out.println("PrintWriter er ikke åpnet");
             }
         }
-
-        try {
-            // Kode som kan kaste en exception
-        } catch (ExceptionKlasse exceptionKlassen) {
-            // Kode for en eller annen form for håndtering
-            // Logge feilen?
-        } catch (EnAnnenExceptionKlasse enAnnenExceptionKlasse) {
-            // Kode for en eller annen form for håndtering
-            // Logge feilen?
-        } finally {
-            // Kode som skal kjøre uansett om det skjer en feil eller ikke
-            // F.eks. lukke databasetilkobling eller fillesing
-        }
-
-
 
     }
 }

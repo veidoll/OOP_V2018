@@ -15,6 +15,7 @@ public class Sjimpanse extends Dyr {
         this.iq = iq;
     }
 
+    // Ikke gjør dette
     @Override
     public int getId() {
         return 8787;

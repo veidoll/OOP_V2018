@@ -14,17 +14,21 @@ public class Main {
         Dyrepark kristiansandDyrepark = new Dyrepark("Kristiansand Dyrepark");
 
         HonningGrevling honningGrevlingenJon = new HonningGrevling("Jon", LocalDate.of(2013, 3, 2));
-        Sjimpanse sjimpansenArne = new Sjimpanse("Arne", 60);
+        Sjimpanse sjimpansenArne = new Sjimpanse("Arne", LocalDate.of(2014, 4, 13), 60);
+        Panda pandaenTrine = new Panda("Trine", LocalDate.of(2017, 3, 17), "Hvit");
 
         kristiansandDyrepark.leggTilEttDyrIDyreparken(honningGrevlingenJon);
         kristiansandDyrepark.leggTilEttDyrIDyreparken(sjimpansenArne);
+        kristiansandDyrepark.leggTilEttDyrIDyreparken(pandaenTrine);
 
         honningGrevlingenJon.drepteEnSlangeTil();
         sjimpansenArne.setIq(50);
+        // Trine graderte rett før hun ble 1 år
+        pandaenTrine.setKungFuBelteFarge("Gult");
 
         System.out.println(sjimpansenArne.getId());
 
-        kristiansandDyrepark.skrivAlleMedBursdagAngittMaanedTilFil(3, "Bursdager_Januar.txt");
+        kristiansandDyrepark.skrivAlleMedBursdagAngittMaanedTilFil(3, "/testen/bursdager_mars.txt");
     }
 
 
