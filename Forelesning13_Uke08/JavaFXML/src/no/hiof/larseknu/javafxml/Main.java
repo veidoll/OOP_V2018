@@ -21,9 +21,9 @@ public class Main extends Application {
         // Oppretter og instansierer et objekt av klassen FXMLLoader. Som vi benytter til å laste inn UI fra en .fxml fil.
         FXMLLoader fxmlInnlaster = new FXMLLoader();
         // Setter lokasjonen vi skal laste inn .fxml filen fra (hvilken fil vi skal hente fra)
-        // getClass().getResource() tar utgangspunkt at vi begynner å lete i struktruen der Main.java er laget
+        // getClass().getResource() tar utgangspunkt at vi begynner å lete i strukturen der Main.java er laget
         // Dette vil si at vi begynner å lete i mappen/pakken "no.hiof.larseknu.javafxml"
-        // Siden vi derfra ønsker å gå inn i mappen/pakken "view" og leter etter "Hovedvindy.fxml" holder det å skriv "view/Hovedvindu.fxml"
+        // Siden vi derfra ønsker å gå inn i mappen/pakken "view" og leter etter "Hovedvindu.fxml" holder det å skriv "view/Hovedvindu.fxml"
         fxmlInnlaster.setLocation(getClass().getResource("view/Hovedvindu.fxml"));
         // Laster inn hovedLayoutet/rotnoden fra Hovedvindu.fxml
         // Hadde vi ønsket å få tilgang til funksjonalitet som ligger i denne, og vi vet hvilken type den er, kunne vi typecastet den
