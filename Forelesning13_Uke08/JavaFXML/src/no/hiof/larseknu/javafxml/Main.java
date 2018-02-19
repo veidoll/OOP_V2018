@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Applikasjon med FXML grensesnitt");
+
 
         FXMLLoader fxmlInnlaster = new FXMLLoader();
 
@@ -24,7 +24,7 @@ public class Main extends Application {
         Scene hovedScene = new Scene(hovedLayout, 400, 300);
 
         primaryStage.setScene(hovedScene);
-
+        primaryStage.setTitle("Applikasjon med FXML grensesnitt");
         primaryStage.show();
     }
 }

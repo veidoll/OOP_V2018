@@ -11,18 +11,20 @@ import javafx.scene.shape.Rectangle;
 
 public class HovedvinduController {
     @FXML
-    private ColorPicker fargeVelger;
+    private Button velgFargeButton;
+
     @FXML
-    private Button velgFargeElipseButton;
+    private ColorPicker fargeVelger;
+
     @FXML
     private Ellipse enElipse;
     @FXML
     private Rectangle enRektangel;
 
     @FXML
-    public void initialize() {
+    private void initialize() {
 
-        velgFargeElipseButton.setOnAction(new EventHandler<ActionEvent>() {
+        velgFargeButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 Paint valgtFarge = fargeVelger.getValue();
@@ -32,7 +34,8 @@ public class HovedvinduController {
 
     }
 
-    public void fargeleggRektangel(ActionEvent actionEvent) {
+    @FXML
+    private void fargeleggRektangel(ActionEvent actionEvent) {
         Paint valgtFarge = fargeVelger.getValue();
         enRektangel.setFill(valgtFarge);
     }

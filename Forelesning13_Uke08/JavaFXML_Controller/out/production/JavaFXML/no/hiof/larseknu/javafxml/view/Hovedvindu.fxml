@@ -23,7 +23,7 @@
       <HBox alignment="CENTER" layoutX="91.0" layoutY="128.0" prefHeight="144.0" prefWidth="419.0" spacing="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <children>
             <ColorPicker fx:id="fargeVelger" />
-            <Button fx:id="velgFargeElipseButton" alignment="TOP_LEFT" mnemonicParsing="false" text="Fargelegg Elipse" />
+            <Button fx:id="velgFargeButton" alignment="TOP_LEFT" mnemonicParsing="false" text="Fargelegg Elipse" />
             <Button fx:id="velgFargeRektangelButton" mnemonicParsing="false" onAction="#fargeleggRektangel" text="Fargelegg Rektangel" />
          </children>
       </HBox>
