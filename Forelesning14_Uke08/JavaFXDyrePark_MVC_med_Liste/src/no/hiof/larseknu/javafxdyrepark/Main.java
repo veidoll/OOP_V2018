@@ -9,8 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
+import no.hiof.larseknu.javafxdyrepark.controller.DyreDetaljController;
 import no.hiof.larseknu.javafxdyrepark.controller.DyrelisteController;
-import no.hiof.larseknu.javafxdyrepark.controller.HovedlayoutController;
 import no.hiof.larseknu.javafxdyrepark.model.Dyr;
 
 import java.io.IOException;
@@ -49,12 +49,12 @@ public class Main extends Application {
             // Oppretter og instansierer et objekt av klassen FXMLLoader. Som vi benytter til å laste inn UI fra en .fxml fil.
             FXMLLoader fxmlInnlaster = new FXMLLoader();
             // Setter lokasjonen vi skal laste inn .fxml filen fra (hvilken fil vi skal hente fra)
-            fxmlInnlaster.setLocation(getClass().getResource("view/Hovedlayout.fxml"));
+            fxmlInnlaster.setLocation(getClass().getResource("view/DyreDetalj.fxml"));
             // Laster inn hovedLayoutet/rotnoden fra Hovedlayout.fxml
             Parent hovedLayout = fxmlInnlaster.load();
 
             // Henter ut controlleren som hører til hovedlayoutet
-            HovedlayoutController hovedlayoutController = fxmlInnlaster.getController();
+            DyreDetaljController hovedlayoutController = fxmlInnlaster.getController();
             // Gir en referanse til denne klassen, slik at HovedlayoutController får tilgang til å hente lister med data og kalle metode for å bytte scene
             hovedlayoutController.setMain(this);
 
@@ -115,8 +115,8 @@ public class Main extends Application {
         errorAlert.show();
     }
 
+    // Returnerer vår ObservableList med dyr
     public ObservableList<Dyr> getAlleDyrene() {
-        // Returnerer vår ObservableList med dyr
         return alleDyrene;
     }
 

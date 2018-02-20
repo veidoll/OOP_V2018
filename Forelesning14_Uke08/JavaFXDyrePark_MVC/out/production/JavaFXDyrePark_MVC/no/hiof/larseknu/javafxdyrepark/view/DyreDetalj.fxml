@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="261.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.larseknu.javafxdyrepark.controller.HovedlayoutController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="261.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.larseknu.javafxdyrepark.controller.DyreDetaljController">
    <children>
       <Label fx:id="navnTekstLabel" layoutX="14.0" layoutY="14.0" text="Navn" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
          <font>
@@ -34,6 +34,5 @@
       </GridPane>
       <Button layoutX="195.0" layoutY="139.0" mnemonicParsing="false" onAction="#gaaTilNesteDyr" text="Neste" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
       <Button layoutY="136.0" mnemonicParsing="false" onAction="#gaaTilForrigeDyr" text="Forrige" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" />
-      <Button layoutX="96.0" layoutY="148.0" mnemonicParsing="false" onAction="#gaaTilListe" text="Gå til liste" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="96.0" />
    </children>
 </AnchorPane>

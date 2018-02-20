@@ -8,7 +8,7 @@ import javafx.scene.control.TextField;
 import no.hiof.larseknu.javafxdyrepark.Main;
 import no.hiof.larseknu.javafxdyrepark.model.Dyr;
 
-public class HovedlayoutController {
+public class DyreDetaljController {
     // Label definert i fxml
     @FXML
     private Label navnTekstLabel;
@@ -70,12 +70,5 @@ public class HovedlayoutController {
             // Senker indexen til valgtDyr med 1
             valgtDyr--;
         }
-    }
-
-    // Metode for å gå til listescenen, det er Main klassen som kontrollerer dette
-    // EventHandleren er "satt" i fxml'en
-    @FXML
-    public void gaaTilListe(ActionEvent actionEvent) {
-        mainApp.gaaTilListeVisning();
     }
 }

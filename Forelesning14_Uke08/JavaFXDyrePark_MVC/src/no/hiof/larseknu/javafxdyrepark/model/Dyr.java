@@ -6,13 +6,16 @@ public class Dyr {
     private String navn;
     private String art;
     private LocalDate fodselsDato;
+    // final ID, som gjør at ID'en til ett dyr ikke kan endres etter det er satt første gang
     private final int ID;
+    // static idTeller, denne er "felles" for Dyre-klassen. Så alle objekter vil ha tilgang til den samme verdien
     private static int idTeller = 100;
 
     public Dyr(String navn, String art, LocalDate fodselsDato) {
         this.navn = navn;
         this.art = art;
         this.fodselsDato = fodselsDato;
+        // Setter ID'en og øker idTeller med 1 slik at neste dyr som blir opprettet får en verdi som er 1 høyere
         this.ID = Dyr.idTeller++;
     }
 
@@ -50,5 +53,10 @@ public class Dyr {
 
     public int getID() {
         return ID;
+    }
+
+    @Override
+    public String toString() {
+        return art + " - " + navn;
     }
 }
