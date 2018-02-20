@@ -27,18 +27,18 @@ public class Main {
 
         System.out.println(dyreNavneKo);
 
-        // det eneste elementet vi da kan hente er det første -> Per
+        // det eneste elementet vi da kan hente er det første -> Arne
         // til dette sier vi at vi poller elementer fra køen
 
-        // la oss hente "Per"
+        // la oss hente "Arne"
         System.out.println(dyreNavneKo.poll());
 
-        // la oss se hva som er igjen i stabelen etter at vi poppet hilde av stabelen
+        // la oss se hva som er igjen i køen etter at vi hentet Arne
         System.out.println(dyreNavneKo); // her ser vi da at han er fjernet
 
         // vi kan velge å se på elementet som ligger først uten at den fjernes ved å sniktitte på den
         System.out.println(dyreNavneKo.peek());
 
-        System.out.println(dyreNavneKo); // vi ser da at kari ikke er fjernet
+        System.out.println(dyreNavneKo); // vi ser da at Trine ikke er fjernet
     }
 }

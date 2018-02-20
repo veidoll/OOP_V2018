@@ -79,9 +79,13 @@ public class Main extends Application{
         enKnapp.setOnMouseExited(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
+<<<<<<< Updated upstream
                 // Vi skriver ut en liten tekst til konsollen (ikke så vanlig i UI applikasjoner, vi gjør dette bare for testingens del
                 System.out.println("Mus over knapp!");
                 // Setter en ny font på knappen. Finnes ikke fonten i systemet blir default benyttet. Setter også fontstørrelse 24
+=======
+                System.out.println("Mus bort fra knapp!");
+>>>>>>> Stashed changes
                 enKnapp.setFont(new Font("Calibri", 14));
             }
         });
