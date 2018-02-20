@@ -6,26 +6,18 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
-import no.hiof.larseknu.javafxdyrepark.controller.DyrelisteController;
 import no.hiof.larseknu.javafxdyrepark.controller.HovedlayoutController;
 import no.hiof.larseknu.javafxdyrepark.model.Dyr;
 
-import java.io.IOException;
 import java.time.LocalDate;
-
+import java.util.ArrayList;
 
 public class Main extends Application {
 
-    // Lager en observablelist, denne har støtte for å oppdatere elementer i listen i grensesnittet automagisk
     private ObservableList<Dyr> alleDyrene = FXCollections.observableArrayList();
-    // Legger stagen/vinduet i en lokal feltvariabel
-    private Stage primaryStage;
 
     public Main() {
-        // Oppretter og fyller listen med en rekke dyr
         alleDyrene.add(new Dyr("Nils", "HonningGrevling", LocalDate.of(2015, 5, 5)));
         alleDyrene.add(new Dyr("Trine", "Panda",  LocalDate.of(1995, 2 ,1)));
         alleDyrene.add(new Dyr("Guro", "Panda",  LocalDate.of(1995, 2 ,1)));
@@ -35,92 +27,29 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
-        // Setter den lokale feltvariabelen
-        this.primaryStage = primaryStage;
+    public void start(Stage primaryStage) throws Exception {
 
-        // Setter hvilken scene som skal lastes inn
-        gaaTilHovedVisning();
-    }
+        FXMLLoader fxmlInnlaster = new FXMLLoader();
 
-    // Laster inn
-    public void gaaTilHovedVisning(){
-        try {
-            // Oppretter og instansierer et objekt av klassen FXMLLoader. Som vi benytter til å laste inn UI fra en .fxml fil.
-            FXMLLoader fxmlInnlaster = new FXMLLoader();
-            // Setter lokasjonen vi skal laste inn .fxml filen fra (hvilken fil vi skal hente fra)
-            fxmlInnlaster.setLocation(getClass().getResource("view/Hovedlayout.fxml"));
-            // Laster inn hovedLayoutet/rotnoden fra Hovedlayout.fxml
-            Parent hovedLayout = fxmlInnlaster.load();
+        fxmlInnlaster.setLocation(getClass().getResource("view/Hovedlayout.fxml"));
+        Parent hovedLayout = fxmlInnlaster.load();
 
-            // Henter ut controlleren som hører til hovedlayoutet
-            HovedlayoutController hovedlayoutController = fxmlInnlaster.getController();
-            // Gir en referanse til denne klassen, slik at HovedlayoutController får tilgang til å hente lister med data og kalle metode for å bytte scene
-            hovedlayoutController.setMain(this);
+        HovedlayoutController hovedlayoutController = fxmlInnlaster.getController();
+        hovedlayoutController.setMain(this);
 
-            // Oppretter og instansierer scenen vi skal benytte, og setter hovedLayout(rotnoden), samt høyde og bredde
-            Scene hovedScene = new Scene(hovedLayout, 400, 200);
+        Scene hovedScene = new Scene(hovedLayout, 400, 200);
 
-            // Legger scenen vi har laget til primaryStage (vinduet)
-            primaryStage.setScene(hovedScene);
-            // Lager en tittel
-            primaryStage.setTitle("Dyrene i Dyreparken");
-            // Viser primaryStage (vinduet). Uten denne vil vi ikke få frem noe på skjermen
-            primaryStage.show();
-        }
-        catch (IOException ioe) {
-            // Viser en alertboks med feilmelding hvis vi ikke skulle få lastet inn fxmlen
-            visErrorAlert(ioe.getMessage());
-        }
-    }
-
-    public void gaaTilListeVisning() {
-        try {
-            // Oppretter og instansierer et objekt av klassen FXMLLoader. Som vi benytter til å laste inn UI fra en .fxml fil.
-            FXMLLoader fxmlInnlaster = new FXMLLoader();
-
-            // Setter lokasjonen vi skal laste inn .fxml filen fra (hvilken fil vi skal hente fra)
-            fxmlInnlaster.setLocation(getClass().getResource("view/Dyreliste.fxml"));
-            // Laster inn hovedLayoutet/rotnoden fra Dyreliste.fxml
-            Parent hovedLayout = fxmlInnlaster.load();
-
-            // Henter ut controlleren som hører til Dyrelisten
-            DyrelisteController dyrelisteController = fxmlInnlaster.getController();
-            // Gir en referanse til denne klassen, slik at DyrelisteController får tilgang til å hente lister med data og kalle metode for å bytte scene
-            dyrelisteController.setMain(this);
-
-            // Oppretter og instansierer scenen vi skal benytte, og setter hovedLayout(rotnoden), samt høyde og bredde
-            Scene hovedScene = new Scene(hovedLayout, 400, 200);
-
-            primaryStage.setScene(hovedScene);
-            primaryStage.setTitle("Dyreliste");
-        }
-        catch (IOException ioe) {
-            // Viser en alertboks med feilmelding hvis vi ikke skulle få lastet inn fxmlen
-            visErrorAlert(ioe.getMessage());
-        }
-    }
-
-    private void visErrorAlert(String message) {
-        // Oppretter og instansierer et Alert objekt, og setter typen til Informasjon (vi får da en OK knapp, samt et ikon med "i" i boksen
-        Alert errorAlert = new Alert(AlertType.ERROR);
-        // Setter tittelen til alertboksen
-        errorAlert.setTitle("Feil med innlasting av grensesnitt");
-        // Setter denne til null for å gjøre alertboksen litt ryddigere, hadde vi hatt behov for en header kunne vi satt en tekst her
-        errorAlert.setHeaderText(null);
-        // Setter innholdet i alertboksen, altså teksten som skal vises
-        errorAlert.setContentText(message);
-
-        // Setter at alertboksen skal vises, og at vi venter med å kjøre videre i programmet til det er trykket OK eller den er lukket
-        errorAlert.show();
+        primaryStage.setScene(hovedScene);
+        primaryStage.setTitle("Dyrene i Dyreparken");
+        primaryStage.show();
     }
 
     public ObservableList<Dyr> getAlleDyrene() {
-        // Returnerer vår ObservableList med dyr
         return alleDyrene;
     }
 
     public static void main(String[] args) {
         launch(args);
     }
+
 }
