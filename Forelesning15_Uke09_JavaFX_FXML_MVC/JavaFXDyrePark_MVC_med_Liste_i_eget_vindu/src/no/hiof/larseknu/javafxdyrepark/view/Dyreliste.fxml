@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.larseknu.javafxdyrepark.controller.DyrelisteController">
+   <children>
+      <ListView fx:id="dyreListe" layoutX="220.0" layoutY="100.0" prefHeight="350.0" prefWidth="310.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button layoutX="129.0" layoutY="361.0" mnemonicParsing="false" onAction="#setValgtDyrOgAvslutt" prefHeight="25.0" prefWidth="120.0" text="Velg dyr" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="129.0" AnchorPane.rightAnchor="129.0" />
+   </children>
+</AnchorPane>
