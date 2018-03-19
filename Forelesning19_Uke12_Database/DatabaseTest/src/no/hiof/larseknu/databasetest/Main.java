@@ -5,33 +5,41 @@ import java.time.LocalDate;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
+        Main.postGrestest();
+
         Connection connection = MinDatabase.connect();
 
-        AnimalMapper animalMapper = new AnimalMapper(connection);
+        DyrDoa dyrDoa = new DyrDoa(connection);
 
-        System.out.println(animalMapper.hentDyr(1));
+        System.out.println(dyrDoa.hentDyrMedId(20));
 
-        System.out.println(animalMapper.hentAlleDyr());
+        System.out.println(dyrDoa.hentAlleDyr());
 
 
-        for (Dyr etDyr:
-             animalMapper.hentAlleDyr()) {
-            System.out.println(etDyr.getAnimal() + " -- " + etDyr.getMale());
+        for (Dyr etDyr : dyrDoa.hentAlleDyr()) {
+            System.out.println(etDyr.getNavn() + " -- " + etDyr.getArt());
         }
 
 
-        Dyr ape = new Dyr(0, "Ape", "Monkey", "Apee", "Apa", "Horde");
+        Dyr ape = new Dyr(0, "Julius", "Ape", LocalDate.now());
 
-        animalMapper.leggTilDyr(ape);
+        dyrDoa.leggTilDyr(ape);
 
+        ape.setNavn("JuliusJr");
 
-        animalMapper.slettDyr(209);
+        dyrDoa.oppdaterDyr(ape);
+
+        System.out.println(dyrDoa.hentDyrMedId(ape.getId()));
+
+        dyrDoa.slettDyr(ape.getId());
+
+        connection.close();
 
     }
 
-    public void test() {
-        String url = "jdbc:postgresql://localhost:5432/postgres";
+    public static void postGrestest() {
+        String url = "jdbc:postgresql://localhost:5432/dyrehagedb";
 
         String bruker = "postgres";
         String passord = "drossap";
@@ -46,12 +54,12 @@ public class Main {
             ResultSet resultSet = statement.executeQuery(sporring);
 
             while (resultSet.next()) {
-                String dyrid = resultSet.getString(1);
+                int dyrid = resultSet.getInt(1);
                 String navn = resultSet.getString(2);
                 String art = resultSet.getString(3);
                 String fodselsdato = resultSet.getString(4);
 
-                //System.out.println(new Dyr(Integer.parseInt(dyrid), navn, art, LocalDate.parse(fodselsdato)));
+                System.out.println(new Dyr(dyrid, navn, art, LocalDate.parse(fodselsdato)));
             }
         }
         catch (SQLException e) {

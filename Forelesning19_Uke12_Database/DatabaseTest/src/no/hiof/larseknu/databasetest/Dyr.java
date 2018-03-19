@@ -4,15 +4,14 @@ import java.time.LocalDate;
 
 public class Dyr {
     private int id;
-    private String animal, young, female, male, collectiveNoun;
+    private String navn, art;
+    private LocalDate fodselsDato;
 
-    public Dyr(int id, String animal, String young, String female, String male, String collectiveNoun) {
+    public Dyr(int id, String navn, String art, LocalDate fodselsDato) {
         this.id = id;
-        this.animal = animal;
-        this.young = young;
-        this.female = female;
-        this.male = male;
-        this.collectiveNoun = collectiveNoun;
+        this.navn = navn;
+        this.art = art;
+        this.fodselsDato = fodselsDato;
     }
 
     public int getId() {
@@ -23,55 +22,37 @@ public class Dyr {
         this.id = id;
     }
 
-    public String getAnimal() {
-        return animal;
+    public String getNavn() {
+        return navn;
     }
 
-    public void setAnimal(String animal) {
-        this.animal = animal;
+    public void setNavn(String navn) {
+        this.navn = navn;
     }
 
-    public String getYoung() {
-        return young;
+    public String getArt() {
+        return art;
     }
 
-    public void setYoung(String young) {
-        this.young = young;
+    public void setArt(String art) {
+        this.art = art;
     }
 
-    public String getFemale() {
-        return female;
+    public LocalDate getFodselsDato() {
+        return fodselsDato;
     }
 
-    public void setFemale(String female) {
-        this.female = female;
-    }
-
-    public String getMale() {
-        return male;
-    }
-
-    public void setMale(String male) {
-        this.male = male;
-    }
-
-    public String getCollectiveNoun() {
-        return collectiveNoun;
-    }
-
-    public void setCollectiveNoun(String collectiveNoun) {
-        this.collectiveNoun = collectiveNoun;
+    public void setFodselsDato(LocalDate fodselsDato) {
+        this.fodselsDato = fodselsDato;
     }
 
     @Override
     public String toString() {
         return "Dyr{" +
                 "id=" + id +
-                ", animal='" + animal + '\'' +
-                ", young='" + young + '\'' +
-                ", female='" + female + '\'' +
-                ", male='" + male + '\'' +
-                ", collectiveNoun='" + collectiveNoun + '\'' +
+                ", navn='" + navn + '\'' +
+                ", art='" + art + '\'' +
+                ", fodselsDato=" + fodselsDato +
                 '}';
     }
 }

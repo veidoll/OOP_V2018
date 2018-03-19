@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="root@localhost" uuid="f8e3f01b-4952-4385-99ab-261fafd206e3">
+    <data-source source="LOCAL" name="dyrehagedb@localhost" uuid="b40b4787-a2e1-41c4-bccf-9c1f27100ce2">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/dyrepark</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/dyrehagedb</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
@@ -15,25 +15,11 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="postgres@localhost" uuid="a1cc6584-40b7-4a98-aab3-39a70174b036">
+    <data-source source="LOCAL" name="dyrehagedb@localhostpostgres" uuid="da982d85-0f84-48a3-9676-9de97bcfe260">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="movietime@localhost" uuid="2e3e87a4-3dc2-4e5a-8248-1768e87d6dbd">
-      <driver-ref>mysql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/movietime</jdbc-url>
-      <driver-properties>
-        <property name="autoReconnect" value="true" />
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-      </driver-properties>
+      <jdbc-url>jdbc:postgresql://localhost:5432/dyrehagedb</jdbc-url>
     </data-source>
   </component>
 </project>

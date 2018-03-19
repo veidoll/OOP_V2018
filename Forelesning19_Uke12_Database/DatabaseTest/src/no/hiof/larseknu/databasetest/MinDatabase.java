@@ -12,7 +12,7 @@ public class MinDatabase {
 
         try
         {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dyrepark?useSSL=false", "root", "drossap");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dyrehagedb?useSSL=false", "root", "drossap");
         }
         catch(SQLException sqle)
         {
