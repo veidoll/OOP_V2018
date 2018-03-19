@@ -7,6 +7,10 @@ import java.sql.Statement;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+// Det er en del duplisering av kode i denne klassen, bare for å gi dere et konkret eksempel med "alt"
+// som skal til for hver enkelt handling
+// Normalt sett vil man nok refaktorere dette litt og hatt en intern metode som tar en
+// SQL-spørring istedenfor å duplisere
 public class DyrDoa {
 
     private Connection connection;
@@ -16,15 +20,37 @@ public class DyrDoa {
     }
 
     public Dyr hentDyrMedId(int id) {
-        try
+        try (//Lag et nytt statement objekt
+             Statement stmnt = connection.createStatement();
+             // Henter resultatet fra databasen
+             ResultSet resultSet = stmnt.executeQuery("SELECT * FROM dyr WHERE iddyr = " + id + ";"))
         {
-            //Lag et nytt statement objekt
-            Statement stmnt = connection.createStatement();
-
-            ResultSet resultSet = stmnt.executeQuery("SELECT * FROM dyr WHERE iddyr = " + id + ";");
-
             if (resultSet.next()) {
+                int dyreId = resultSet.getInt("iddyr");
+                String navn = resultSet.getString("navn");
+                String art = resultSet.getString("art");
+                String fodselsDatoString = resultSet.getString("fodselsdato");
+                LocalDate fodselsdato = LocalDate.parse(fodselsDatoString);
 
+                return new Dyr(dyreId, navn, art, fodselsdato);
+            }
+        }
+        catch(SQLException sqle)
+        {
+            System.err.println("Feil: "+sqle);
+
+        }
+
+        return null;
+    }
+
+    public Dyr hentForsteDyrMedNavn(String dyreNavn) {
+        try (//Lag et nytt statement objekt
+             Statement statement = connection.createStatement();
+             // Henter resultatet fra databasen
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM dyr WHERE navn LIKE '" + dyreNavn + "';"))
+        {
+            if (resultSet.next()) {
                 int dyreId = resultSet.getInt("iddyr");
                 String navn = resultSet.getString("navn");
                 String art = resultSet.getString("art");
@@ -46,12 +72,12 @@ public class DyrDoa {
     public ArrayList<Dyr> hentAlleDyr() {
         ArrayList<Dyr> dyreListe = new ArrayList<>();
 
-        try
-        {
-            //Lag et nytt statement objekt
-            Statement statement = connection.createStatement();
+        try (//Lag et nytt statement objekt
+             Statement statement = connection.createStatement();
 
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM dyr;");
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM dyr;"))
+        {
+
 
             while (resultSet.next()) {
                 dyreListe.add(new Dyr(resultSet.getInt("iddyr"),
@@ -69,15 +95,13 @@ public class DyrDoa {
     }
 
     public void leggTilDyr(Dyr etDyr)  {
-        try
+        String sql = String.format("INSERT INTO dyr (navn, art, fodselsdato) " +
+                        "VALUES('%s','%s','%s');",
+                etDyr.getNavn(), etDyr.getArt(), etDyr.getFodselsDato());
+
+        try (//Lag et nytt statement objekt
+             Statement statement = connection.createStatement())
         {
-            //Lag et nytt statement objekt
-            Statement statement = connection.createStatement();
-
-            String sql = String.format("INSERT INTO dyr (navn, art, fodselsdato) " +
-                    "VALUES('%s','%s','%s');",
-                    etDyr.getNavn(), etDyr.getArt(), etDyr.getFodselsDato());
-
             statement.execute(sql, Statement.RETURN_GENERATED_KEYS);
 
             ResultSet resultSet = statement.getGeneratedKeys();
@@ -92,11 +116,9 @@ public class DyrDoa {
     }
 
     public void slettDyr(int id) {
-        try
+        try(//Lag et nytt statement objekt
+            Statement statement = connection.createStatement())
         {
-            //Lag et nytt statement objekt
-            Statement statement = connection.createStatement();
-
             String sql = String.format("DELETE FROM dyr WHERE iddyr = %d;", id);
 
             statement.executeUpdate(sql);
@@ -108,10 +130,10 @@ public class DyrDoa {
     }
 
     public void oppdaterDyr(Dyr etDyr) {
-        try
+        try (//Lag et nytt statement objekt
+             Statement statement = connection.createStatement())
         {
-            //Lag et nytt statement objekt
-            Statement statement = connection.createStatement();
+
 
             String sql = String.format("UPDATE dyr " +
                             "SET navn = '%s', art = '%s', fodselsdato = '%s' " +
