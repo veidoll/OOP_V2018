@@ -20,16 +20,16 @@ public class Main {
         {
             // Henter en connection som blir laget for oss av DriverManager metoden
             // Benytter da riktig driver basert på databasen vi har spesifisert i URL'en
-            DyrDoa dyrDoa = new DyrDoa(connection);
+            DyrMapper dyrMapper = new DyrMapper(connection);
 
             // Henter dyr med ID 20 fra databasen
-            System.out.println(dyrDoa.hentForsteDyrMedNavn("Nils"));
+            System.out.println(dyrMapper.hentForsteDyrMedNavn("Nils"));
 
             // Henter alle dyr fra databasen
-            System.out.println(dyrDoa.hentAlleDyr());
+            System.out.println(dyrMapper.hentAlleDyr());
 
             // Går gjennom listen med dyr og skriver ut navn og art
-            for (Dyr etDyr : dyrDoa.hentAlleDyr()) {
+            for (Dyr etDyr : dyrMapper.hentAlleDyr()) {
                 System.out.println(etDyr.getNavn() + " -- " + etDyr.getArt());
             }
 
@@ -37,19 +37,19 @@ public class Main {
             Dyr julius = new Dyr(0, "Julius", "Ape", LocalDate.now());
 
             // Legger Julius til i databasen
-            dyrDoa.leggTilDyr(julius);
+            dyrMapper.leggTilDyr(julius);
 
             // Endrer navn på objektet til JuliusJr
             julius.setNavn("JuliusJr");
 
             // Oppdaterer databasen med den nye informasjonen
-            dyrDoa.oppdaterDyr(julius);
+            dyrMapper.oppdaterDyr(julius);
 
             // Henter ut data om juliusjr
-            System.out.println(dyrDoa.hentDyrMedId(julius.getId()));
+            System.out.println(dyrMapper.hentDyrMedId(julius.getId()));
 
             // Sletter juliusjr fra databasen igjen
-            dyrDoa.slettDyr(julius.getId());
+            dyrMapper.slettDyr(julius.getId());
         }
         catch(SQLException sqle)
         {

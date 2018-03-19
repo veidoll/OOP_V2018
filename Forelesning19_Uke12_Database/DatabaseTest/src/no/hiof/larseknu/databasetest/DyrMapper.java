@@ -11,11 +11,11 @@ import java.util.ArrayList;
 // som skal til for hver enkelt handling
 // Normalt sett vil man nok refaktorere dette litt og hatt en intern metode som tar en
 // SQL-spørring istedenfor å duplisere
-public class DyrDoa {
+public class DyrMapper {
 
     private Connection connection;
 
-    public DyrDoa(Connection connection) {
+    public DyrMapper(Connection connection) {
         this.connection = connection;
     }
 
