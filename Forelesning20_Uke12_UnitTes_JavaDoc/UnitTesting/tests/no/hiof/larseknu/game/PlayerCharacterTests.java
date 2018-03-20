@@ -2,6 +2,7 @@ package no.hiof.larseknu.game;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ public class PlayerCharacterTests
     private PlayerCharacter playerCharacter;
 
     @BeforeEach
-    public void init(){
+    public void init() {
         playerCharacter = new PlayerCharacter();
     }
 
@@ -45,6 +46,8 @@ public class PlayerCharacterTests
         playerCharacter.setHealth(health);
 
         playerCharacter.sleep();
+
+
 
         assertTrue(health < playerCharacter.getHealth());
     }
@@ -95,7 +98,7 @@ public class PlayerCharacterTests
     {
         List<String> result = playerCharacter.getWeapons();
 
-        List<String> weapons = new ArrayList<String>();
+        List<String> weapons = new ArrayList<>();
 
         weapons.add("Long Bow");
         weapons.add("Short Bow");
@@ -108,6 +111,13 @@ public class PlayerCharacterTests
     @Test
     public void profanityNicknameCastException() {
         assertThrows(ProfanityException.class, () -> playerCharacter.setNickName("Penis"));
+
+        assertThrows(ProfanityException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                playerCharacter.setNickName("Penis");
+            }
+        });
     }
 
 

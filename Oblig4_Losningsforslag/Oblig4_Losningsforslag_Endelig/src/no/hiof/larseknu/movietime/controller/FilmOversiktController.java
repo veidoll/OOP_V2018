@@ -74,6 +74,7 @@ public class FilmOversiktController {
         filmListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Film>() {
             @Override
             public void changed(ObservableValue<? extends Film> observable, Film gammelFilm, Film nyFilm) {
+
                 // Kaller vår egen metode for å oppdatere grensesnittet med den filmen vi har valgt
                 oppdaterFilmInformasjon(nyFilm);
             }

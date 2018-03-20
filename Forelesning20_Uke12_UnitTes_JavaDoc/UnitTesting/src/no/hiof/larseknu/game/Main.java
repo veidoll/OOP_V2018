@@ -3,10 +3,9 @@ package no.hiof.larseknu.game;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-    }
+        PlayerCharacter playerCharacter = new PlayerCharacter();
 
-    public static int sum(int a, int b) {
-        return a + b;
+        // Tvinger frem en ProfanityException
+        playerCharacter.setNickName("Penis");
     }
 }
