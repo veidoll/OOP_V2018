@@ -5,6 +5,8 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import no.hiof.larseknu.movietime.model.Film;
 
+import java.time.LocalDate;
+
 public class RedigerFilmDialogController {
     // Alle feltvariablene for komponenter definert i tilhørende .fxml
     @FXML
@@ -45,7 +47,8 @@ public class RedigerFilmDialogController {
         if (filmSomRedigeres != null) {
             tittelTextField.setText(filmSomRedigeres.getTittel());
             beskrivelseTextArea.setText(filmSomRedigeres.getBeskrivelse());
-            utgivelsesdatoDatePicker.setValue(filmSomRedigeres.getUtgivelsesdato());
+            if (!filmSomRedigeres.getUtgivelsesdato().equals(LocalDate.MIN))
+                utgivelsesdatoDatePicker.setValue(filmSomRedigeres.getUtgivelsesdato());
             spilletidTextField.setText(String.valueOf(filmSomRedigeres.getSpilletid()));
         }
     }
@@ -57,7 +60,8 @@ public class RedigerFilmDialogController {
             // Hvis de er det, fyller vi opp filmobjektet vårt med den nye dataen fra feltene
             filmSomRedigeres.setTittel(tittelTextField.getText());
             filmSomRedigeres.setBeskrivelse(beskrivelseTextArea.getText());
-            filmSomRedigeres.setUtgivelsesdato(utgivelsesdatoDatePicker.getValue());
+            if (utgivelsesdatoDatePicker.getValue() != null)
+                filmSomRedigeres.setUtgivelsesdato(utgivelsesdatoDatePicker.getValue());
             filmSomRedigeres.setSpilletid(Integer.parseInt(spilletidTextField.getText()));
 
             // Setter at vi avsluttet ved å trykke OK

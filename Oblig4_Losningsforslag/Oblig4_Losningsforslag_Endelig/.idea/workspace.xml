@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45edbed2-4350-447b-a22e-f85717ad46d8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/.idea/misc.xml" afterPath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/UnitTesting.iml" afterPath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/UnitTesting.iml" />
-      <change beforePath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/src/no/hiof/larseknu/game/Main.java" afterPath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/src/no/hiof/larseknu/game/Main.java" />
-      <change beforePath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/src/no/hiof/larseknu/game/PlayerCharacter.java" afterPath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/src/no/hiof/larseknu/game/PlayerCharacter.java" />
-      <change beforePath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/src/no/hiof/larseknu/game/PlayerCharacterTests.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/src/no/hiof/larseknu/game/ProfanityException.java" afterPath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/src/no/hiof/larseknu/game/ProfanityException.java" />
+      <change beforePath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/tests/no/hiof/larseknu/game/PlayerCharacterTests.java" afterPath="$PROJECT_DIR$/../../Forelesning20_Uke12_UnitTes_JavaDoc/UnitTesting/tests/no/hiof/larseknu/game/PlayerCharacterTests.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/FilmOversiktController.java" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/FilmOversiktController.java" />
+      <change beforePath="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java" />
+      <change beforePath="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Film.java" afterPath="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Film.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilmOversiktController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FilmOversiktController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/FilmOversiktController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="82" column="15" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="256">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +47,8 @@
       <file leaf-file-name="RedigerFilmDialogController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2136">
-              <caret line="92" column="59" lean-forward="false" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+            <state relative-caret-position="350">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Person.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#189#190#0" expanded="true" />
                 <element signature="e#217#218#0" expanded="true" />
@@ -88,18 +84,18 @@
       <file leaf-file-name="TvSerie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/TvSerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3408">
+            <state relative-caret-position="699">
               <caret line="156" column="131" lean-forward="false" selection-start-line="156" selection-start-column="131" selection-end-line="156" selection-end-column="131" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Film.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Film.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Film.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="e#632#633#0" expanded="true" />
                 <element signature="e#655#656#0" expanded="true" />
@@ -141,14 +137,14 @@
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/Produksjon.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/RedigerFilmDialog.fxml" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/Main.java" />
-        <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Film.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/FilmOversikt.fxml" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/MainJavaFX.java" />
-        <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/TvSerie.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Produksjon.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Person.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/FilmOversiktController.java" />
+        <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java" />
+        <option value="$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Film.java" />
       </list>
     </option>
   </component>
@@ -180,9 +176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,12 +199,22 @@
               <item name="Oblig4_Losningsforslag_Endelig" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="movietime" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oblig4_Losningsforslag_Endelig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oblig4_Losningsforslag_Endelig" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="movietime" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -399,11 +402,12 @@
       <workItem from="1520506677491" duration="1305000" />
       <workItem from="1520775137951" duration="265000" />
       <workItem from="1521542047574" duration="133000" />
+      <workItem from="1521721942606" duration="537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54664000" />
+    <option name="totallyTimeSpent" value="55201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-217" width="2560" height="1337" extended-state="6" />
@@ -412,19 +416,20 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32663316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31093118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31031615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20456365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20696557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39761904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3968386" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -433,7 +438,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955465" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32663316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -456,8 +460,20 @@
           <line>51</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -473,14 +489,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/FilmOversikt.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="45" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java">
@@ -525,13 +541,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/RedigerFilmDialog.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java">
@@ -595,14 +611,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/FilmOversikt.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="45" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/javafx.base/javafx/event/EventHandler.java" />
@@ -634,14 +650,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/FilmOversikt.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="45" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/MainJavaFX.java">
@@ -688,13 +704,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/RedigerFilmDialog.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java">
@@ -708,14 +724,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/FilmOversikt.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="87" lean-forward="true" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Episode.java">
@@ -819,33 +835,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/FilmOversikt.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/RedigerFilmDialog.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/view/RedigerFilmDialog.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1053">
           <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2136">
-          <caret line="92" column="59" lean-forward="false" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,19 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Produksjon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -885,29 +878,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/TvSerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3408">
+        <state relative-caret-position="699">
           <caret line="156" column="131" lean-forward="false" selection-start-line="156" selection-start-column="131" selection-end-line="156" selection-end-column="131" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Film.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="168">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/FilmOversiktController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="82" column="15" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="256">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/controller/RedigerFilmDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/larseknu/movietime/model/Film.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
           </folding>
         </state>
       </provider>

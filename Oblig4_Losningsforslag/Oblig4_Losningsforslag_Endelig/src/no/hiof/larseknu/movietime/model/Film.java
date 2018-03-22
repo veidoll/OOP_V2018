@@ -18,7 +18,7 @@ public class Film extends Produksjon implements Comparable<Film> {
     @Override
     public String toString() {
         // super - nøkkelordet her er strengt tatt ikke nødvendig, men det gjør det tydelig at metodene tilhører superklassen
-        return super.getTittel() + (super.getUtgivelsesdato() != null ? " (" + super.getUtgivelsesdato().getYear() + ")" :"");// + (super.getSpilletid() > 0 ? super.getSpilletid() + " minutter" : "");
+        return super.getTittel() + (super.getUtgivelsesdato() != LocalDate.MIN ? " (" + super.getUtgivelsesdato().getYear() + ")" :"");// + (super.getSpilletid() > 0 ? super.getSpilletid() + " minutter" : "");
 
     }
 
